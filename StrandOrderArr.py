@@ -29,5 +29,11 @@ print(big_ppl)
 print(big_ppl['height'])
 
 #access multiple
-print(big_ppl['height', 'weight'])
+#print(big_ppl['height', 'weight'])
 
+#create record array
+rec_array = np.rec.array([('Bob', 66, 140, 33), ('Jerry', 70, 123, 17)], dtype=person_data_def)
+print(rec_array)
+
+first_record_age = rec_array[0].age
+print(first_record_age)
