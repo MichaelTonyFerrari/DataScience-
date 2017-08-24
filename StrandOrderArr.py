@@ -20,3 +20,14 @@ print(ages)
 
 make_younger = ages/2
 print(make_younger)
+
+big_ppl = np.zeros((4,3,2), dtype=person_data_def)
+print(big_ppl)
+
+big_ppl[3,2,1] = ('Echo', 55, 120, 23)
+print(big_ppl)
+print(big_ppl['height'])
+
+#access multiple
+print(big_ppl['height', 'weight'])
+
